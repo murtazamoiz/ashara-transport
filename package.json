@@ -1,0 +1,17 @@
+{
+  "name": "google-sheets-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "googleapis": "^150.0.1"
+  }
+}
