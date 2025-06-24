@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const getSheetClient = require('./google-sheets');
 
 const app = express();
@@ -8,7 +7,6 @@ const port = process.env.PORT || 3000;
 const SPREADSHEET_ID = '1X9xw0Pw4s2r2AUAhzjoaA4DKd4E3XtKL7hIpoKi6L0U'; // Replace with your actual ID
 
 app.use(express.json());
-app.use(bodyParser.json()); // Optional now, as express.json() is usually enough
 
 app.get('/', (req, res) => {
   res.send('Hello from Backend');
